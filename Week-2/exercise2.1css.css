@@ -1,0 +1,47 @@
+.sq-box-lg{
+    background-color: rgb(255, 255, 255);
+    position:relative;
+    display: flex;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    top: 25vh;
+}.sq-box-sm{
+    width: 100px;
+    height: 100px;
+    transition: transform 1s;
+    position: absolute;
+}
+
+.red{
+    transform-origin: top left;
+    background-color: red;
+    left: 0%;
+    top: 0%;
+}.blue{
+    transform-origin: top right;
+    background-color: blue;
+    left: 50%;
+    top: 0%;
+}.yellow{
+    transform-origin: bottom left;
+    background-color: yellow;
+    left: 0%;
+    top: 50%;
+}.green{
+    transform-origin: bottom right;
+    background-color: green;
+    left: 50%;
+    top: 50%;
+}
+
+.sq-box-lg:hover .clock-wise{
+    transform: rotate(90deg);
+}.sq-box-lg:hover .anti-clock-wise{
+    transform: rotate(-90deg);
+}
+
+p{
+    margin : 0 auto;
+    margin-top: 50%;
+}
